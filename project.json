@@ -1,0 +1,34 @@
+{
+    "debugMode"     : 1,
+    "showFPS"       : true,
+    "frameRate"     : 30,
+    "id"            : "gameCanvas",
+    "renderMode"    : 0,
+    "engineDir"     : "frameworks/cocos2d-html5/",
+
+    "modules"       : ["cocos2d", "extensions", "external", "chipmunk"],
+
+
+    "jsList"        : [
+        "src/constant.js",
+        "src/function.js",
+        "src/resource.js",
+
+        "src/abs/monsterSprite.js",
+        "src/abs/bulletSprite.js",
+
+        "src/roleMenuScene.js",
+        "src/appScene.js",
+        "src/computer/computerScene.js",
+
+        "src/playerLayer.js",
+        "src/UILayer.js",
+        "src/computer/computerLayer.js",
+
+        "src/computer/computerSprite.js",
+        "src/playerSprite.js",
+
+        "src/bullet/jumpBullet.js",
+        "src/bullet/generalBullet.js"
+    ]
+}

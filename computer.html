@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cocos2d-HTML5 Test Cases</title>
+</head>
+<body style="text-align: center;background: #f2f6f8;">
+<div></div>
+<div style="display:inline-block;width:auto; margin: 0 auto; background: black; position:relative; border:5px solid black; border-radius: 10px; box-shadow: 0 5px 50px #333">
+    <canvas id="gameCanvas" width="800" height="450"></canvas>
+</div>
+
+<script src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
+<script src="frameworks/cocos2d-html5/CCBoot.js"></script>
+</body>
+<script type="text/javascript">
+    cc.game.onStart = function(){
+        cc.view.enableRetina(false);
+
+        cc.LoaderScene.preload(resources, function () {
+            cc.director.runScene(new computerScene());
+        }, this);
+
+    };
+    cc.game.run();
+</script>
+</html>
+
+
